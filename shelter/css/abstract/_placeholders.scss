@@ -5,3 +5,8 @@
 %transition {
    transition: all .3s;
 }
+
+%flex-column {
+   display: flex;
+   flex-direction: column;
+}

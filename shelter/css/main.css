@@ -333,6 +333,11 @@ h2, h1 {
   transition: all 0.3s;
 }
 
+.help__item, .help__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 @font-face {
   font-family: "Georgia";
   src: url("../../assets/fonts/Georgia.woff") format("woff"), url("../../assets/fonts/Georgia.woff2") format("woff2");
@@ -615,4 +620,33 @@ h4 {
 }
 .slider__btn:hover {
   background-color: #F1CDB3;
+}
+
+.help {
+  background-color: #FFFFFF;
+  padding: 80px 0 100px 0;
+}
+
+.help__wrapper {
+  gap: 55px;
+  align-items: center;
+}
+
+.help__title {
+  text-align: center;
+}
+
+.help__content {
+  display: flex;
+  -moz-column-gap: 120px;
+       column-gap: 120px;
+  row-gap: 53px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.help__item {
+  gap: 30px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
