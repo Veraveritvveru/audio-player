@@ -9,7 +9,6 @@
    display: flex;
    justify-content: space-between;
    margin-top: 30px;
-
 }
 
 .navigation {
@@ -21,19 +20,23 @@
 }
 
 .navigation__link {
-   color: $color-nav-light;
+   position: relative;
+   color: $color-dark-s;
    @extend %transition;
-//    &:active {
-//       text-decoration: underline $color-primary;
-//    }
 }
 
-// .navigation__link:last-child {
-//    padding: 0;
-// }
+.navigation__link_active {
+   color: $color-light-s;
 
-// .header__navigation {
-//    @include media-mobile {
-//       display: none;
-//    }
-// }
+   &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 3px;
+      color: $color-primary;
+      width: 20px;
+
+      left: 0;
+      top: 3px;
+   }
+}

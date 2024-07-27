@@ -1,0 +1,30 @@
+.button {
+  font-family: 'Georgia', Times, serif;
+  padding: 15px 45px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &_bordered {
+    background: $color-light-s;
+    border: 2px solid $color-primary;
+    &:hover {
+      background: $color-primary-light;
+      border: 2px solid $color-primary-light;
+      }
+  }
+
+  &_colored {
+    border: 0;
+    background-color: $color-primary;
+    &:hover {
+      background-color: $color-primary-light;
+      // border: 2px solid $color-primary-light;
+    }
+  }
+}

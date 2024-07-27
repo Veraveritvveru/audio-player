@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 li {
   list-style: none;
 }
@@ -29,13 +32,13 @@ h1 {
 
 .logo__description {
   cursor: pointer;
-  color: $color-heading-light;
+  color: $color-light-xl;
   @include font(1.3rem, 15px);
   letter-spacing: 0.1em;
 }
 
 h2 {
-  color: $color-heading-light;
+  color: $color-light-xl;
   @extend %font-add;
   @include font(4.4rem, 130%);
 }

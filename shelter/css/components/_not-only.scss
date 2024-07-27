@@ -2,5 +2,31 @@
   background: url('../../assets/img/noise_transparent.png'),
   radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%);
   background-repeat: repeat;
-  padding-top: 150px;
+  padding-top: 180px;
 }
+
+.not-only__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // @include media-mobile {
+  //    display:block;
+  // }
+}
+
+.not-only__content {
+  padding-bottom: 75px;
+}
+
+.not-only__title {
+  max-width: 310px;
+  margin: 0;
+}
+
+.not-only__text {
+  max-width: 460px;
+  color: $color-dark-s;
+  @include font(1.5rem, 160%);
+  margin: 42px 0;
+}
+
