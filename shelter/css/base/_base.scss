@@ -42,3 +42,21 @@ h2 {
   @extend %font-add;
   @include font(4.4rem, 130%);
 }
+
+h3 {
+  color: $color-dark-l;
+  font-family: 'Georgia', Times, serif;
+  letter-spacing: 0.06em;
+
+  @include font(3.5rem, 130%);
+
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+  color: $color-dark-l;
+  font-family: 'Georgia', Times, serif;
+
+  @include font(2.0rem, 2.3rem);
+}
