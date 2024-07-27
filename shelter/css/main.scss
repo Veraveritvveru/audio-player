@@ -3,8 +3,16 @@
 
 //abstract
 @import 'abstract/constants';
+@import 'abstract/mixins';
+@import 'abstract/placeholders';
 
 //base
 @import 'base/fonts';
 @import 'base/base';
 
+//layouts
+@import 'layouts/wrapper';
+@import 'layouts/header';
+
+//components
+@import 'components/not-only';
