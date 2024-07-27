@@ -329,7 +329,7 @@ h2, h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.navigation__link {
+.slider__btn, .navigation__link, .button {
   transition: all 0.3s;
 }
 
@@ -427,6 +427,7 @@ h4 {
   line-height: 2.3rem;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 1.2px;
 }
 
 .button {
@@ -439,11 +440,11 @@ h4 {
   letter-spacing: 0.06em;
   border-radius: 100px;
   cursor: pointer;
-  transition: all 0.3s;
 }
 .button_bordered {
   background: #FAFAFA;
   border: 2px solid #F1CDB3;
+  padding: 13px 44px;
 }
 .button_bordered:hover {
   background: #FDDCC4;
@@ -564,4 +565,54 @@ h4 {
 }
 .about__text:last-child {
   margin: 0;
+}
+
+.our-friends {
+  background-color: #F6F6F6;
+}
+
+.our-friends__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 0 100px 0;
+}
+
+.our-friends__title {
+  text-align: center;
+}
+
+.slider__container {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+
+.slider__inner {
+  display: flex;
+  gap: 90px;
+}
+
+.slider__card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-color: #FAFAFA;
+  padding-bottom: 30px;
+}
+
+.slider__btn {
+  cursor: pointer;
+  display: flex;
+  height: 52px;
+  width: 52px;
+  border: solid 2px #F1CDB3;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.slider__btn:hover {
+  background-color: #F1CDB3;
 }/*# sourceMappingURL=main.css.map */
