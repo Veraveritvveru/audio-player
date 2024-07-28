@@ -325,7 +325,7 @@ template {
   display: none;
 }
 
-h2, h1 {
+.donation__description, h2, h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -333,7 +333,7 @@ h2, h1 {
   transition: all 0.3s;
 }
 
-.help__item, .help__wrapper {
+.donation__right-content, .help__item, .help__wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -649,4 +649,66 @@ h4 {
 .help__item {
   gap: 30px;
   align-items: center;
+}
+
+.donation {
+  background-color: #F6F6F6;
+}
+
+.donation__wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.donation__image {
+  margin: 91px 0 110px 143px;
+}
+
+.donation__right-content {
+  align-items: flex-start;
+}
+.donation__right-content .button {
+  display: flex;
+  gap: 15px;
+  border-radius: 9px;
+  border: 0;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+}
+
+.number-card {
+  color: #545454;
+  font-size: 2rem;
+  line-height: 115%;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-image {
+  padding-left: 5px;
+}
+
+.donation__title {
+  max-width: 300px;
+  margin-top: 80px;
+}
+
+.donation-info {
+  color: #B2B2B2;
+  max-width: 380px;
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.donation__description {
+  color: #545454;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  line-height: 110%;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.06em;
 }/*# sourceMappingURL=main.css.map */
