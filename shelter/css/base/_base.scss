@@ -11,6 +11,7 @@ a, a:link, a:visited, a:hover  {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -59,4 +60,5 @@ h4 {
   font-family: 'Georgia', Times, serif;
 
   @include font(2.0rem, 2.3rem);
+  letter-spacing: 1.2px;
 }

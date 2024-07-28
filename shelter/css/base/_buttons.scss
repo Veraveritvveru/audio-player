@@ -8,11 +8,12 @@
   letter-spacing: 0.06em;
   border-radius: 100px;
   cursor: pointer;
-  transition: all .3s;
+  @extend %transition;
 
   &_bordered {
     background: $color-light-s;
     border: 2px solid $color-primary;
+    padding: 13px 44px;
     &:hover {
       background: $color-primary-light;
       border: 2px solid $color-primary-light;

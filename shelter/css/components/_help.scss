@@ -1,0 +1,29 @@
+.help {
+   background-color: $color-light-xl;
+   padding: 80px 0 100px 0;
+}
+
+.help__wrapper {
+   @extend %flex-column;
+   gap: 55px;
+   align-items: center;
+}
+
+.help__title {
+   text-align: center;
+}
+
+.help__content {
+   display: flex;
+   column-gap: 120px;
+   row-gap: 53px;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+.help__item {
+   @extend %flex-column;
+   gap: 30px;
+   align-items: center;
+}

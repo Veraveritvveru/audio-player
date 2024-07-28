@@ -325,12 +325,17 @@ template {
   display: none;
 }
 
-h2, h1 {
+.donation__description, .contacts__info, .footer__title, .contacts__title, h2, h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.navigation__link {
+.slider__btn, .slider__card:hover, .navigation__link, .button {
   transition: all 0.3s;
+}
+
+.donation__right-content, .help__item, .help__wrapper, .location, .contacts {
+  display: flex;
+  flex-direction: column;
 }
 
 @font-face {
@@ -371,6 +376,7 @@ a, a:link, a:visited, a:hover {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -427,6 +433,7 @@ h4 {
   line-height: 2.3rem;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 1.2px;
 }
 
 .button {
@@ -439,11 +446,11 @@ h4 {
   letter-spacing: 0.06em;
   border-radius: 100px;
   cursor: pointer;
-  transition: all 0.3s;
 }
 .button_bordered {
   background: #FAFAFA;
   border: 2px solid #F1CDB3;
+  padding: 13px 44px;
 }
 .button_bordered:hover {
   background: #FDDCC4;
@@ -501,6 +508,66 @@ h4 {
   width: 20px;
   left: 0;
   top: 3px;
+}
+
+.link-active {
+  height: 3px;
+  color: #F1CDB3;
+  width: 20px;
+}
+
+.footer {
+  background: url("../../assets/img/noise_transparent.png"), radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%);
+  background-repeat: repeat;
+}
+
+.footer__wrapper {
+  display: flex;
+  gap: 138px;
+}
+
+.contacts {
+  gap: 40px;
+}
+
+.contacts__title {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  line-height: 130%;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.06em;
+}
+
+.footer__title {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  line-height: 130%;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  margin: 0;
+  padding-top: 56px;
+}
+
+.footer-image {
+  padding-top: 40px;
+}
+
+.contacts__info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 115%;
+  font-weight: 400;
+  font-style: normal;
+  color: #F1CDB3;
+  letter-spacing: 0.06em;
+}
+
+.location {
+  gap: 35px;
 }
 
 .not-only {
@@ -564,4 +631,153 @@ h4 {
 }
 .about__text:last-child {
   margin: 0;
+}
+
+.our-friends {
+  background-color: #F6F6F6;
+}
+
+.our-friends__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 0 100px 0;
+}
+
+.our-friends__title {
+  text-align: center;
+}
+
+.our-friends-button {
+  color: #292929;
+}
+
+.slider__container {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+
+.slider__inner {
+  display: flex;
+  gap: 90px;
+}
+
+.slider__card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-color: #FAFAFA;
+  padding-bottom: 30px;
+}
+
+.slider__card:hover {
+  box-shadow: 0 2px 25px 10px rgba(37, 39, 39, 0.03);
+}
+
+.slider__btn {
+  cursor: pointer;
+  display: flex;
+  height: 52px;
+  width: 52px;
+  border: solid 2px #F1CDB3;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.slider__btn:hover {
+  background-color: #F1CDB3;
+}
+
+.help {
+  background-color: #FFFFFF;
+  padding: 80px 0 100px 0;
+}
+
+.help__wrapper {
+  gap: 55px;
+  align-items: center;
+}
+
+.help__title {
+  text-align: center;
+}
+
+.help__content {
+  display: flex;
+  -moz-column-gap: 120px;
+       column-gap: 120px;
+  row-gap: 53px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.help__item {
+  gap: 30px;
+  align-items: center;
+}
+
+.donation {
+  background-color: #F6F6F6;
+}
+
+.donation__wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.donation__image {
+  margin: 91px 0 110px 143px;
+}
+
+.donation__right-content {
+  align-items: flex-start;
+}
+.donation__right-content .button {
+  display: flex;
+  gap: 15px;
+  border-radius: 9px;
+  border: 0;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+}
+
+.number-card {
+  color: #545454;
+  font-size: 2rem;
+  line-height: 115%;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-image {
+  padding-left: 5px;
+}
+
+.donation__title {
+  max-width: 300px;
+  margin-top: 80px;
+}
+
+.donation-info {
+  color: #B2B2B2;
+  max-width: 380px;
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.donation__description {
+  color: #545454;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  line-height: 110%;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.06em;
 }/*# sourceMappingURL=main.css.map */
