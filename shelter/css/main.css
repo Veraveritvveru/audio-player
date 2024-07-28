@@ -329,7 +329,7 @@ template {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.slider__btn, .navigation__link, .button {
+.slider__btn, .slider__card:hover, .navigation__link, .button {
   transition: all 0.3s;
 }
 
@@ -376,6 +376,7 @@ a, a:link, a:visited, a:hover {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -507,6 +508,12 @@ h4 {
   width: 20px;
   left: 0;
   top: 3px;
+}
+
+.link-active {
+  height: 3px;
+  color: #F1CDB3;
+  width: 20px;
 }
 
 .footer {
@@ -642,6 +649,10 @@ h4 {
   text-align: center;
 }
 
+.our-friends-button {
+  color: #292929;
+}
+
 .slider__container {
   display: flex;
   align-items: center;
@@ -660,6 +671,10 @@ h4 {
   align-items: center;
   background-color: #FAFAFA;
   padding-bottom: 30px;
+}
+
+.slider__card:hover {
+  box-shadow: 0 2px 25px 10px rgba(37, 39, 39, 0.03);
 }
 
 .slider__btn {

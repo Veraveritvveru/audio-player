@@ -1,6 +1,7 @@
 .our-friends {
   background-color: $color-light-l;
 }
+
 .our-friends__wrapper {
   display: flex;
   flex-direction: column;
@@ -12,4 +13,8 @@
 
 .our-friends__title {
   text-align: center;
+}
+
+.our-friends-button {
+  color: $color-dark-3xl;
 }

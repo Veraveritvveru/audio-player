@@ -19,6 +19,11 @@
    padding-bottom: 30px;
 }
 
+.slider__card:hover {
+   box-shadow: 0 2px 25px 10px rgba(37, 39, 39, 0.03);
+   @extend %transition;
+}
+
 .slider__btn {
    cursor: pointer;
    display: flex;
