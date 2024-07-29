@@ -325,7 +325,7 @@ template {
   display: none;
 }
 
-.donation__description, .contacts__info, .footer__title, .contacts__title, h2, h1 {
+.donation__description, .contacts__info, .footer__title, .contacts__title, h4, h3, h2, h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -333,7 +333,7 @@ template {
   transition: all 0.3s;
 }
 
-.donation__right-content, .help__item, .help__wrapper, .location, .contacts {
+.donation__right-content, .help__item, .help__wrapper, .location, .contacts, .logo {
   display: flex;
   flex-direction: column;
 }
@@ -415,20 +415,18 @@ h2 {
 }
 
 h3 {
+  margin: 0;
   color: #545454;
-  font-family: "Georgia", Times, serif;
   letter-spacing: 0.06em;
   font-size: 3.5rem;
   line-height: 130%;
   font-weight: 400;
   font-style: normal;
-  margin: 0;
 }
 
 h4 {
   margin: 0;
   color: #545454;
-  font-family: "Georgia", Times, serif;
   font-size: 2rem;
   line-height: 2.3rem;
   font-weight: 400;
@@ -485,39 +483,28 @@ h4 {
 .navigation {
   display: flex;
   gap: 35px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 160%;
 }
 
+.navigation__item {
+  display: flex;
+}
+
 .navigation__link {
-  position: relative;
   color: #CDCDCD;
+}
+.navigation__link:hover {
+  color: #FAFAFA;
 }
 
 .navigation__link_active {
   color: #FAFAFA;
   cursor: default;
-}
-.navigation__link_active::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 3px;
-  color: #F1CDB3;
-  width: 20px;
-  left: 0;
-  top: 3px;
-}
-
-.link-active {
-  height: 3px;
-  color: #F1CDB3;
-  width: 20px;
+  border-bottom: 3px solid #F1CDB3;
 }
 
 .footer {
-  background: url("../../assets/img/noise_transparent.png"), radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%);
+  background: url("../../assets/img/noise_transparent@2x.png"), radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%);
   background-repeat: repeat;
 }
 
@@ -571,8 +558,7 @@ h4 {
 }
 
 .not-only {
-  background: url("../../assets/img/noise_transparent.png"), radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%);
-  background-repeat: repeat;
+  background: url("../../assets/img/noise_transparent@2x.png"), radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%) center repeat;
   padding-top: 180px;
 }
 
