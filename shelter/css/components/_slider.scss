@@ -1,41 +1,46 @@
 .slider__container {
-   display: flex;
-   align-items: center;
-   gap: 53px;
+  display: flex;
+  align-items: center;
+  gap: 53px;
 }
 
 .slider__inner {
-   display: flex;
-   gap: 90px;
+  display: flex;
+  gap: 90px;
 }
 
 .slider__card {
-   display: flex;
-   flex-direction: column;
-   gap: 30px;
-   align-items: center;
+  @extend %flex-column;
+  gap: 30px;
+  align-items: center;
 
-   background-color: $color-light-s;
-   padding-bottom: 30px;
+  background-color: $color-light-s;
+  padding-bottom: 30px;
+  border-radius: 9px;
 }
 
 .slider__card:hover {
-   box-shadow: 0 2px 25px 10px rgba(37, 39, 39, 0.03);
-   @extend %transition;
+  box-shadow: 0 2px 25px 10px rgba(37, 39, 39, 0.03);
+  @extend %transition;
+}
+
+.slider__card:hover .learn-more {
+  background: $color-primary-light;
+  border: 2px solid $color-primary-light;
 }
 
 .slider__btn {
-   cursor: pointer;
-   display: flex;
-   height: 52px;
-   width: 52px;
-   border: solid 2px $color-primary;
-   border-radius: 50%;
-   align-items: center;
-   justify-content: center;
-   @extend %transition;
+  cursor: pointer;
+  display: flex;
+  height: 52px;
+  width: 52px;
+  border: solid 2px $color-primary;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  @extend %transition;
 
-   &:hover {
-      background-color: $color-primary;
-   }
+  &:hover {
+    background-color: $color-primary;
+  }
 }
