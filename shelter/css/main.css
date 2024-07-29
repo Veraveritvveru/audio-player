@@ -333,7 +333,7 @@ template {
   transition: all 0.3s;
 }
 
-.donation__right-content, .help__item, .help__wrapper, .location, .contacts, .logo {
+.donation__right-content, .help__item, .help__wrapper, .slider__card, .our-friends__wrapper, .location, .contacts, .logo {
   display: flex;
   flex-direction: column;
 }
@@ -407,6 +407,7 @@ h1 {
 }
 
 h2 {
+  margin: 0;
   color: #FFFFFF;
   font-size: 4.4rem;
   line-height: 130%;
@@ -572,11 +573,6 @@ h4 {
   padding-bottom: 75px;
 }
 
-.not-only__title {
-  max-width: 310px;
-  margin: 0;
-}
-
 .not-only__text {
   max-width: 460px;
   color: #CDCDCD;
@@ -585,6 +581,10 @@ h4 {
   font-weight: 400;
   font-style: normal;
   margin: 42px 0;
+}
+
+.not-only__content a {
+  color: #292929;
 }
 
 .about__wrapper {
@@ -624,8 +624,6 @@ h4 {
 }
 
 .our-friends__wrapper {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 60px;
   padding: 80px 0 100px 0;
@@ -635,7 +633,7 @@ h4 {
   text-align: center;
 }
 
-.our-friends-button {
+.our-friends__button a {
   color: #292929;
 }
 
@@ -651,16 +649,20 @@ h4 {
 }
 
 .slider__card {
-  display: flex;
-  flex-direction: column;
   gap: 30px;
   align-items: center;
   background-color: #FAFAFA;
   padding-bottom: 30px;
+  border-radius: 9px;
 }
 
 .slider__card:hover {
   box-shadow: 0 2px 25px 10px rgba(37, 39, 39, 0.03);
+}
+
+.slider__card:hover .learn-more {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
 }
 
 .slider__btn {

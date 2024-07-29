@@ -17,11 +17,6 @@
   padding-bottom: 75px;
 }
 
-.not-only__title {
-  max-width: 310px;
-  margin: 0;
-}
-
 .not-only__text {
   max-width: 460px;
   color: $color-dark-s;
@@ -29,3 +24,6 @@
   margin: 42px 0;
 }
 
+.not-only__content a {
+  color: $color-dark-3xl;
+}
