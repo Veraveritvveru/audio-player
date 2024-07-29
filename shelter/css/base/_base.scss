@@ -10,6 +10,10 @@ a, a:link, a:visited, a:hover  {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
