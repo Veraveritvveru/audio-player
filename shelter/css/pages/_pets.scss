@@ -1,0 +1,78 @@
+.header-pets {
+  margin-bottom: 30px;
+}
+
+.logo__title_dark {
+  color: $color-dark-l;
+}
+
+.logo__description_dark {
+  cursor: pointer;
+  color: $color-dark-3xl;
+  @include font(1.3rem, 15px);
+  letter-spacing: 0.1em;
+}
+
+.navigation__link_dark {
+  color: $color-dark-l;
+  @extend %transition;
+
+  &:hover {
+    color: $color-dark-3xl;
+  }
+}
+
+.navigation__link_active_dark {
+  color: $color-dark-3xl;
+  cursor: default;
+  border-bottom: 3px solid $color-primary;
+}
+
+.our-friends__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 30px;
+}
+
+.pagination {
+  display: flex;
+  gap: 20px;
+}
+
+.pagination__button {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  cursor: pointer;
+  @extend %font-add;
+  @include font(2rem, 115%);
+}
+
+.pagination__first,
+.pagination__prev {
+  border: 2px solid $color-dark-s;
+  background-color: transparent;
+  color: $color-dark-s;
+  cursor: default;
+}
+
+.pagination__curr {
+  background-color: $color-primary;
+  border: 0;
+  color: $color-dark-3xl;
+  cursor: default;
+}
+
+.pagination__next,
+.pagination__last {
+  border: 2px solid $color-primary;
+  background-color: transparent;
+  color: $color-dark-3xl;
+  @extend %transition;
+
+  &:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;
+  }
+}

@@ -325,11 +325,12 @@ template {
   display: none;
 }
 
-.donation__description, .contacts__info, .footer__title, .contacts__title, h4, h3, h2, h1 {
+.pagination__button, .donation__description, .contacts__info, .footer__title, .contacts__title, h4, h3, h2, h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.slider__btn, .slider__card:hover, .navigation__link, .button {
+.pagination__next,
+.pagination__last, .navigation__link_dark, .slider__btn, .slider__card:hover, .contacts__info, .navigation__link, .button {
   transition: all 0.3s;
 }
 
@@ -557,6 +558,9 @@ h4 {
   color: #F1CDB3;
   letter-spacing: 0.06em;
 }
+.contacts__info:hover {
+  color: #FDDCC4;
+}
 
 .contacts__info svg {
   flex: 0 0 auto;
@@ -772,4 +776,86 @@ h4 {
   line-height: 150%;
   font-weight: 400;
   font-style: italic;
+}
+
+.header-pets {
+  margin-bottom: 30px;
+}
+
+.logo__title_dark {
+  color: #545454;
+}
+
+.logo__description_dark {
+  cursor: pointer;
+  color: #292929;
+  font-size: 1.3rem;
+  line-height: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
+
+.navigation__link_dark {
+  color: #545454;
+}
+.navigation__link_dark:hover {
+  color: #292929;
+}
+
+.navigation__link_active_dark {
+  color: #292929;
+  cursor: default;
+  border-bottom: 3px solid #F1CDB3;
+}
+
+.our-friends__list {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 30px;
+}
+
+.pagination {
+  display: flex;
+  gap: 20px;
+}
+
+.pagination__button {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 115%;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pagination__first,
+.pagination__prev {
+  border: 2px solid #CDCDCD;
+  background-color: transparent;
+  color: #CDCDCD;
+  cursor: default;
+}
+
+.pagination__curr {
+  background-color: #F1CDB3;
+  border: 0;
+  color: #292929;
+  cursor: default;
+}
+
+.pagination__next,
+.pagination__last {
+  border: 2px solid #F1CDB3;
+  background-color: transparent;
+  color: #292929;
+}
+.pagination__next:hover,
+.pagination__last:hover {
+  background-color: #FDDCC4;
+  border: 2px solid #FDDCC4;
 }/*# sourceMappingURL=main.css.map */
