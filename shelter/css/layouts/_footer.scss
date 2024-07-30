@@ -41,6 +41,11 @@
    @extend %font-add;
    color: $color-primary;
    letter-spacing: 0.06em;
+   @extend %transition;
+
+   &:hover {
+      color: $color-primary-light;
+   }
 }
 
 .contacts__info svg {
