@@ -1,20 +1,29 @@
 .not-only {
   background: url('../assets/img/noise_transparent@2x.png'),
-  radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%) center repeat;
+  radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20 center repeat;
   padding-top: 180px;
+
+  @include media-mini-laptop {
+    padding-top: 130px;
+  }
 }
 
 .not-only__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // @include media-mobile {
-  //    display:block;
-  // }
+  @include media-mini-laptop {
+    flex-direction: column;
+  }
 }
 
 .not-only__content {
-  padding-bottom: 75px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  @include media-mini-laptop {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .not-only__text {
@@ -22,6 +31,10 @@
   color: $color-dark-s;
   @include font(1.5rem, 160%);
   margin: 42px 0;
+
+  @include media-big-mobile {
+    text-align: center;
+  }
 }
 
 .not-only__content a {
@@ -30,4 +43,22 @@
 
 .make-friends {
   display: inline-block;
+  @include media-mini-laptop {
+    align-self: center;
+  }
+}
+
+.not-only__image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.not-only__image img {
+  @include media-mini-laptop {
+    width: 80%;
+  }
+
+  @include media-big-mobile {
+    width: 90%;
+  }
 }
