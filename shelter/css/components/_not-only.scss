@@ -55,10 +55,10 @@
 
 .not-only__image img {
   @include media-mini-laptop {
-    width: 80%;
+    width: 81%;
   }
 
   @include media-big-mobile {
-    width: 90%;
+    width: 88%;
   }
 }

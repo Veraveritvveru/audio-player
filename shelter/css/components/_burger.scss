@@ -20,29 +20,3 @@
    height: 2px;
    background-color: $color-primary;
 }
-
-// .burger__line {
-//    position: absolute;
-//    width: 30px;
-//    height: 2px;
-//    background-color: $color-primary;
-//    &:before, &:after {
-//       content: '';
-//       position: absolute;
-//       left: 0;
-
-//       width: 30px;
-//       height: 2px;
-//       background-color: $color-primary;
-//    }
-//    &:after {
-//       content: '';
-//       position: absolute;
-//       left: 0;
-//       top: 22px;
-//    }
-
-//    &:before {
-//       top: 0;
-//    }
-// }

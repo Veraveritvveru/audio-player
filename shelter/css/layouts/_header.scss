@@ -21,7 +21,7 @@
   gap: 35px;
   line-height: 160%;
 
-  @include media-middle {
+  @include media-tablet {
     gap: 18px;
     font-size: 13px;
   }
