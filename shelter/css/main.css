@@ -447,6 +447,10 @@ h4 {
   letter-spacing: 1.2px;
 }
 
+.none {
+  display: none;
+}
+
 .button {
   font-family: "Georgia", Times, serif;
   padding: 15px 45px;
@@ -696,9 +700,10 @@ h4 {
 }
 @media (max-width: 685px) {
   .about__wrapper {
-    padding: 42px 24px 0 24px;
+    padding: 42px 24px 42px 24px;
     gap: 42px;
     text-align: justify;
+    margin: 0;
   }
 }
 
@@ -760,26 +765,69 @@ h4 {
 .our-friends__wrapper {
   align-items: center;
   gap: 60px;
-  padding: 80px 0 100px 0;
+  max-width: 1220px;
+  padding: 80px 10px 100px 10px;
+}
+@media (max-width: 990px) {
+  .our-friends__wrapper {
+    padding: 80px 30px 100px 30px;
+  }
+}
+@media (max-width: 685px) {
+  .our-friends__wrapper {
+    padding: 40px 0;
+    gap: 42px;
+  }
 }
 
 .our-friends__title {
   text-align: center;
+}
+@media (max-width: 740px) {
+  .our-friends__title {
+    font-size: 2.5rem;
+    line-height: 127%;
+  }
 }
 
 .our-friends__button a {
   color: #292929;
 }
 
-.slider__container {
+.our-friens__slider {
   display: flex;
   align-items: center;
-  gap: 53px;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 1160px) {
+  .our-friens__slider {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 685px) {
+  .our-friens__slider {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.slider__container {
+  display: flex;
+  justify-content: space-between;
+  width: 990px;
 }
 
 .slider__inner {
   display: flex;
-  gap: 90px;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 1160px) {
+  .slider__inner {
+    justify-content: space-around;
+  }
 }
 
 .slider__card {
@@ -788,6 +836,16 @@ h4 {
   background-color: #FAFAFA;
   padding-bottom: 30px;
   border-radius: 9px;
+}
+@media (max-width: 1160px) {
+  .slider__card:last-child {
+    display: none;
+  }
+}
+@media (max-width: 740px) {
+  .slider__card:nth-child(2) {
+    display: none;
+  }
 }
 
 .slider__card:hover {
@@ -808,9 +866,27 @@ h4 {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 .slider__btn:hover {
   background-color: #F1CDB3;
+}
+@media (max-width: 685px) {
+  .slider__btn {
+    order: 2;
+  }
+}
+
+@media (max-width: 685px) {
+  .prev-btn {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 685px) {
+  .next-btn {
+    margin-left: 30px;
+  }
 }
 
 .help {

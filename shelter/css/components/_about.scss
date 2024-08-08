@@ -11,9 +11,10 @@
    }
 
    @include media-big-mobile {
-      padding: 42px 24px 0 24px;
+      padding: 42px 24px 42px 24px;
       gap: 42px;
       text-align: justify;
+      margin: 0;
    }
 }
 

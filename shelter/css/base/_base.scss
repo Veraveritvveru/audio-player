@@ -73,3 +73,8 @@ h4 {
   @include font(2.0rem, 2.3rem);
   letter-spacing: 1.2px;
 }
+
+//УБРАТЬ
+.none {
+  display: none;
+}
