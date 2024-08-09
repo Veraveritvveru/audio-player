@@ -1,0 +1,22 @@
+.burger-btn {
+   cursor: pointer;
+   position: relative;
+   display: none;
+   width: 30px;
+   height: 22px;
+   border-top: 2px solid $color-primary;
+   border-bottom: 2px solid $color-primary;
+
+   @include media-big-mobile {
+      display: block;
+   }
+}
+
+.burger-btn::after {
+   content: '';
+   position: absolute;
+   top: 8px;
+   width: 30px;
+   height: 2px;
+   background-color: $color-primary;
+}

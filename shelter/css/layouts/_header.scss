@@ -9,12 +9,26 @@
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  align-items: center;
+
+  @include media-big-mobile {
+    padding: 0 20px;
+  }
 }
 
 .navigation {
   display: flex;
   gap: 35px;
   line-height: 160%;
+
+  @include media-tablet {
+    gap: 18px;
+    font-size: 13px;
+  }
+
+  @include media-big-mobile {
+    display: none;
+  }
 }
 
 .navigation__item {
@@ -35,3 +49,5 @@
   cursor: default;
   border-bottom: 3px solid $color-primary;
 }
+
+
