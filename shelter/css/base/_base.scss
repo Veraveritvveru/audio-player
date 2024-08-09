@@ -74,6 +74,18 @@ h4 {
   letter-spacing: 1.2px;
 }
 
+h5 {
+  margin: 0;
+  color: $color-dark-l;
+  @extend %font-add;
+  @include font(2.0rem, 2.3rem);
+  letter-spacing: 1.2px;
+
+  @include media-big-mobile {
+    font-size: 1.5rem;
+  }
+}
+
 //УБРАТЬ
 .none {
   display: none;
