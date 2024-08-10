@@ -4,6 +4,10 @@
   @include media-mini-laptop {
     padding-bottom: 100px;
   }
+
+  @include media-big-mobile {
+    padding-bottom: 40px;
+  }
 }
 
 .donation__wrapper {
