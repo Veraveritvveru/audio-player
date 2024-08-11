@@ -20,6 +20,8 @@
   }
 }
 
+
+
 .our-friends__title {
   text-align: center;
 
@@ -31,4 +33,30 @@
 
 .our-friends__button a {
   color: $color-dark-3xl;
+}
+
+.slider__card_pets {
+  @extend %flex-column;
+  gap: 30px;
+  align-items: center;
+
+  background-color: $color-light-s;
+  padding-bottom: 30px;
+  border-radius: 9px;
+
+  &:last-child {
+    @media (max-width: 1160px) {
+      display: none;
+    }
+  }
+}
+
+.slider__card_pets:hover {
+  box-shadow: 0 2px 25px 10px rgba(37, 39, 39, 0.03);
+  @extend %transition;
+}
+
+.slider__card_pets:hover .learn-more {
+  background: $color-primary-light;
+  border: 2px solid $color-primary-light;
 }

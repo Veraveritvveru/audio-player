@@ -28,16 +28,53 @@
   border-bottom: 3px solid $color-primary;
 }
 
+.our-friends__wrapper_pets {
+  @include media-mini-laptop {
+    gap: 30px;
+    padding: 80px 30px 75px 30px;
+  }
+
+  @include media-big-mobile {
+    padding: 40px 10px;
+    gap: 40px;
+  }
+}
+
 .our-friends__list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 40px;
   row-gap: 30px;
+  justify-content: center;
+}
+
+.slider__card_pets:nth-child(7) {
+  @include media-mini-laptop {
+    display: none;
+  }
+}
+
+.slider__card_pets:nth-child(4),
+.slider__card_pets:nth-child(5),
+.slider__card_pets:nth-child(6) {
+  @include media-big-mobile {
+    display: none;
+  }
 }
 
 .pagination {
   display: flex;
   gap: 20px;
+
+  @include media-mini-laptop {
+    margin-top: 10px;
+  }
+
+  @include media-big-mobile {
+    width: 300px;
+    justify-content: space-between;
+    gap: 0;
+  }
 }
 
 .pagination__button {
