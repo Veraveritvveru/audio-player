@@ -45,9 +45,13 @@
   border-radius: 9px;
 
   &:last-child {
-    @media (max-width: 1160px) {
+    @include media-mini-laptop {
       display: none;
     }
+
+    // @media (max-width: 1160px) {
+    //   display: none;
+    // }
   }
 }
 

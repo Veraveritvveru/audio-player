@@ -4,9 +4,9 @@
   justify-content: space-between;
   width: 100%;
 
-  @media (max-width: 1160px) {
-    justify-content: space-between;
-  }
+  // @media (max-width: 1160px) {
+  //   justify-content: space-between;
+  // }
 
   @include media-big-mobile {
     flex-wrap: wrap;

@@ -35,7 +35,7 @@
   }
 
   @include media-big-mobile {
-    padding: 40px 10px;
+    padding: 45px 10px;
     gap: 40px;
   }
 }
@@ -74,6 +74,7 @@
     width: 300px;
     justify-content: space-between;
     gap: 0;
+    margin-top: 0;
   }
 }
 

@@ -81,8 +81,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -662,8 +661,7 @@ h5 {
 
 .contacts__info {
   display: flex;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
   align-items: center;
   font-size: 2rem;
   line-height: 115%;
@@ -897,7 +895,7 @@ h5 {
   padding-bottom: 30px;
   border-radius: 9px;
 }
-@media (max-width: 1160px) {
+@media (max-width: 990px) {
   .slider__card_pets:last-child {
     display: none;
   }
@@ -917,11 +915,6 @@ h5 {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-}
-@media (max-width: 1160px) {
-  .our-friens__slider {
-    justify-content: space-between;
-  }
 }
 @media (max-width: 685px) {
   .our-friens__slider {
@@ -1039,8 +1032,7 @@ h5 {
 
 .help__content {
   display: flex;
-  -moz-column-gap: 120px;
-       column-gap: 120px;
+  column-gap: 120px;
   row-gap: 53px;
   flex-wrap: wrap;
   align-items: center;
@@ -1048,14 +1040,12 @@ h5 {
 }
 @media (max-width: 990px) {
   .help__content {
-    -moz-column-gap: 60px;
-         column-gap: 60px;
+    column-gap: 60px;
   }
 }
 @media (max-width: 685px) {
   .help__content {
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    column-gap: 30px;
     row-gap: 20px;
     justify-content: flex-start;
   }
@@ -1277,7 +1267,7 @@ h5 {
 }
 @media (max-width: 685px) {
   .our-friends__wrapper_pets {
-    padding: 40px 10px;
+    padding: 45px 10px;
     gap: 40px;
   }
 }
@@ -1285,8 +1275,7 @@ h5 {
 .our-friends__list {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
   row-gap: 30px;
   justify-content: center;
 }
@@ -1319,6 +1308,7 @@ h5 {
     width: 300px;
     justify-content: space-between;
     gap: 0;
+    margin-top: 0;
   }
 }
 
@@ -1358,4 +1348,6 @@ h5 {
 .pagination__last:hover {
   background-color: #FDDCC4;
   border: 2px solid #FDDCC4;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
