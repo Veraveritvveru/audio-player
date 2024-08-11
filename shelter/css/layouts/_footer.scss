@@ -6,12 +6,35 @@
 
 .footer__wrapper {
    display: flex;
-   gap: 134px;;
+   justify-content: space-between;
+
+   @include media-mini-laptop {
+      flex-wrap: wrap;
+      gap: 0;
+      padding: 30px 64px 0 64px;
+   }
+
+   @media (max-width: 747px) {
+      justify-content: center;
+      align-items: center;
+      padding: 30px 10px 0 10px;
+      gap: 40px;
+   }
 }
 
 .contacts {
    @extend %flex-column;
    gap: 40px;
+   max-width: 280px;
+
+   @include media-mini-laptop {
+      flex: 0 0 300px;
+   }
+
+   @media (max-width: 747px) {
+      max-width: 250px;
+      align-items: center;
+   }
 }
 
 .contacts__title {
@@ -19,6 +42,10 @@
    @include font(3.5rem, 130%);
    @extend %font-add;
    letter-spacing: 0.06em;
+
+   @media (max-width: 747px) {
+      text-align: center;
+   }
 }
 
 .footer__title {
@@ -27,10 +54,34 @@
    @extend %font-add;
    letter-spacing: 0.06em;
    padding-top: 56px;
+
+   @include media-mini-laptop {
+      padding-top: 0;
+   }
+
+   @media (max-width: 747px) {
+      font-size: 2.5rem;
+      text-align: center;
+   }
 }
 
 .footer-image {
    padding-top: 40px;
+
+   @include media-mini-laptop {
+      margin: 30px auto 0 auto;
+   }
+
+   @media (max-width: 747px) {
+      padding: 0;
+      margin: 0;
+   }
+}
+
+.footer-image img {
+   @media (max-width: 747px) {
+   max-width: 260px;
+   }
 }
 
 .contacts__info {
@@ -55,4 +106,23 @@
 .location {
    @extend %flex-column;
    gap: 34px;
+   max-width: 304px;
+
+   @include media-mini-laptop {
+      flex: 0 0 302px;
+      margin-left: 38px;
+   }
+
+   @media (max-width: 747px) {
+      margin: 0;
+      max-width: 295px;
+      gap: 40px;
+   }
+}
+
+.location .footer__title {
+   @include media-big-mobile {
+      width: 80%;
+      align-self: center;
+   }
 }

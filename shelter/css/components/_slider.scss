@@ -1,12 +1,34 @@
-.slider__container {
+.our-friens__slider {
   display: flex;
   align-items: center;
-  gap: 53px;
+  justify-content: space-between;
+  width: 100%;
+
+  // @media (max-width: 1160px) {
+  //   justify-content: space-between;
+  // }
+
+  @include media-big-mobile {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.slider__container {
+  display: flex;
+  justify-content: space-between;
+  width: 990px;
 }
 
 .slider__inner {
   display: flex;
-  gap: 90px;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width: 1160px) {
+    // width: 580px;
+    justify-content: space-around;
+  }
 }
 
 .slider__card {
@@ -17,6 +39,18 @@
   background-color: $color-light-s;
   padding-bottom: 30px;
   border-radius: 9px;
+
+  &:last-child {
+    @media (max-width: 1160px) {
+      display: none;
+    }
+  }
+
+  &:nth-child(2) {
+    @include media-tablet {
+      display: none;
+    }
+  }
 }
 
 .slider__card:hover {
@@ -39,8 +73,25 @@
   align-items: center;
   justify-content: center;
   @extend %transition;
+  flex-shrink: 0;
 
   &:hover {
     background-color: $color-primary;
+  }
+
+  @include media-big-mobile {
+    order: 2;
+  }
+}
+
+.prev-btn {
+  @include media-big-mobile {
+    margin-right: 30px;
+  }
+}
+
+.next-btn {
+  @include media-big-mobile {
+    margin-left: 30px;
   }
 }

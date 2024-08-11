@@ -50,6 +50,12 @@ h2 {
   color: $color-light-xl;
   @extend %font-add;
   @include font(4.4rem, 130%);
+
+  @include media-big-mobile {
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
 }
 
 h3 {
@@ -66,4 +72,21 @@ h4 {
   @extend %font-add;
   @include font(2.0rem, 2.3rem);
   letter-spacing: 1.2px;
+}
+
+h5 {
+  margin: 0;
+  color: $color-dark-l;
+  @extend %font-add;
+  @include font(2.0rem, 2.3rem);
+  letter-spacing: 1.2px;
+
+  @include media-big-mobile {
+    font-size: 1.5rem;
+  }
+}
+
+//УБРАТЬ
+.none {
+  display: none;
 }

@@ -15,7 +15,6 @@
       <h1 class="logo__title">Cozy House</h1>
       <span class="logo__description">Shelter for pets in Boston</span>
     </div>
-    <span class="hamburger"><span class="hamburger__line"></span></span>
     <nav class="header__navigation">
       <ul class="navigation">
         <li class="navigation__item">
@@ -32,6 +31,7 @@
         </li>
       </ul>
     </nav>
+    <div class="burger-btn"></div>
   </div>
 </header>
 
@@ -46,14 +46,16 @@
             <a href="#our-friends" class="make-friends__link">Make a friend</a>
          </div>
       </div>
-      <img src="./assets/img/start-screen-puppy.png" class="not-only__img" alt="puppy" width="698" height="728">
+      <div class="not-only__image">
+        <img src="./assets/img/start-screen-puppy.png" alt="puppy">
+      </div>
+      
    </div>
   </section>
 
   <section class="about">
-    <div class="wrapper">
-       <div class="about__wrapper">
-          <img src="./assets/img/about-pets.png" class="about__image" alt="dog and cat" width="300" height="408">
+    <div class="wrapper about__wrapper">
+      <img src="./assets/img/about-pets.png" class="about__image" alt="dog and cat">
           <div class="about__content">
              <h3 class="about__title">About the shelter “Cozy House”</h3>
              <p class="about__text">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. 
@@ -62,7 +64,6 @@
                    We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. 
                    Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>            
           </div>
-       </div>
     </div>
   </section>
 
@@ -70,12 +71,12 @@
     <div class="wrapper our-friends__wrapper">
       <h3 class="our-friends__title">Our friends who <br> are looking for a house</h3>
       <div class="our-friens__slider">
+        <div class="slider__btn prev-btn">
+          <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929"/>
+          </svg>
+        </div>
         <div class="slider__container">
-          <div class="slider__btn">
-            <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929"/>
-            </svg>
-          </div>
           <div class="slider__inner">
             <div class="slider__card">
               <img src="./assets/img/pets/pets-katrine.png" width="270" height="270" alt="Katrine">
@@ -93,11 +94,12 @@
               <button class="button button_bordered learn-more">Learn more</button>
             </div>
           </div>
-          <div class="slider__btn">
-            <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929"/>
-            </svg>
-          </div>
+
+        </div>
+        <div class="slider__btn next-btn">
+          <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929"/>
+          </svg>
         </div>
       </div>
       <div class="our-friends__button">
@@ -115,55 +117,55 @@
           <span class="icon">
             <img src="./assets/img/icons/pet-food.svg" alt="pet-food" width="60" height="60">
           </span>
-          <h4>Pet food</h4>
+          <h5>Pet food</h5>
         </div>
         <div class="help__item">
           <span class="icon">
             <img src="./assets/img/icons/transportation.svg" alt="transportation" width="60" height="60">
           </span>
-          <h4>Transportation</h4>
+          <h5>Transportation</h5>
         </div>
         <div class="help__item">
           <span class="icon">
             <img src="./assets/img/icons/toys.svg" alt="toys" width="60" height="60">
           </span>
-          <h4>Toys</h4>
+          <h5>Toys</h5>
         </div>
         <div class="help__item">
           <span class="icon">
             <img src="./assets/img/icons/bowls-and-cups.svg" alt="bowls-and-cups" width="60" height="60">
           </span>
-          <h4>Bowls and cups</h4>
+          <h5>Bowls and cups</h5>
         </div>
         <div class="help__item">
           <span class="icon">
             <img src="./assets/img/icons/shampoos.svg" alt="shampoos" width="60" height="60">
           </span>
-          <h4>Shampoos</h4>
+          <h5>Shampoos</h5>
         </div>
         <div class="help__item">
           <span class="icon">
             <img src="./assets/img/icons/vitamins.svg" alt="vitamins" width="60" height="60">
           </span>
-          <h4>Vitamins</h4>
+          <h5>Vitamins</h5>
         </div>
         <div class="help__item">
           <span class="icon">
             <img src="./assets/img/icons/medicines.svg" alt="medicines" width="60" height="60">
           </span>
-          <h4>Medicines</h4>
+          <h5>Medicines</h5>
         </div>
         <div class="help__item">
           <span class="icon">
             <img src="./assets/img/icons/collars-leashes.svg" alt="collars-leashes" width="60" height="60">
           </span>
-          <h4>Collars / leashes</h4>
+          <h5>Collars / leashes</h5>
         </div>
         <div class="help__item">
           <span class="icon">
             <img src="./assets/img/icons/sleeping-area.svg" alt="sleeping-area" width="60" height="60">
           </span>
-          <h4>Sleeping areas</h4>
+          <h5>Sleeping areas</h5>
         </div>
       </div>
     </div>
@@ -172,11 +174,11 @@
   <section class="donation">
     <div class="wrapper donation__wrapper">
       <div class="donation__left-content">
-        <img class="donation__image" src="./assets/img/donation-dog.png" width="505" height="261" alt="dog">
+        <img class="donation__image" src="./assets/img/donation-dog.png" alt="dog">
       </div>
 
       <div class="donation__right-content">
-        <h3 class="donation__title">You can also make a donation</h3>
+        <h3 class="donation__title">You can also<br>make a donation</h3>
         <p class="donation__description">Name of the bank / Type of bank account</p>
         <div class="button button_colored">
           <img src="./assets/img/icons/credit-card.svg" class="card-image" alt="card">
@@ -232,7 +234,7 @@
     </div>
 
     <div class="footer-image">
-      <img src="./assets/img/footer-puppy.png" alt="The puppy licks the screen" width="300" height="310">
+      <img src="./assets/img/footer-puppy.png" alt="The puppy licks the screen">
     </div>
   </div>
 </footer>

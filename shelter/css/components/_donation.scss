@@ -1,32 +1,79 @@
 .donation {
   background-color: $color-light-l;
+
+  @include media-mini-laptop {
+    padding-bottom: 100px;
+  }
+
+  @include media-big-mobile {
+    padding-bottom: 40px;
+  }
 }
 
 .donation__wrapper {
   display: flex;
   gap: 30px;
+
+  @include media-mini-laptop {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 60px;
+    padding: 0 20px;
+  }
+
+  @include media-big-mobile {
+    gap: 45px;
+  }
+}
+
+.donation__left-content {
+  display: flex;
+  justify-content: center;
 }
 
 .donation__image {
   margin: 91px 0 110px 143px;
+
+  @include media-mini-laptop {
+    margin: 0;
+  }
+
+  @include media-big-mobile {
+    width: 90%;
+  }
 }
 
 .donation__right-content {
   @extend %flex-column;
   align-items: flex-start;
+  gap: 20px;
+
+  @include media-big-mobile {
+    align-items: center;
+    gap: 22px;
+  }
 }
 
 .donation__title {
   max-width: 300px;
   margin-top: 80px;
+
+  @include media-big-mobile {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 42px;
+  }
 }
 
 .donation__description {
   color: $color-dark-l;
-  margin: 20px 0;
   @include font(1.5rem, 110%);
   letter-spacing: 0.06em;
   @extend %font-add;
+
+  @include media-big-mobile {
+    letter-spacing: 0.01em;
+  }
 }
 
 .donation__right-content .button {
@@ -35,12 +82,20 @@
   border-radius: 9px;
   border: 0;
   padding: 10px 17px 10px 15px;
-  margin-bottom: 20px;
+  align-items: center;
+
+  @include media-big-mobile {
+    padding: 10px 13px;
+  }
 }
 
 .number-card {
   color: $color-dark-l;
   @include font(2rem, 115%);
+
+  @include media-big-mobile {
+    font-size: 1.5rem;
+  }
 }
 
 .donation-info {
