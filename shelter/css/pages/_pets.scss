@@ -13,6 +13,10 @@
   letter-spacing: 0.1em;
 }
 
+.header__mobile-menu.open .navigation_light {
+  background-color: $color-light-s;
+}
+
 .navigation__link_dark {
   color: $color-dark-l;
   @extend %transition;

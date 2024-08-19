@@ -6,6 +6,7 @@
    height: 22px;
    border-top: 2px solid $color-primary;
    border-bottom: 2px solid $color-primary;
+   transition: transform .3s ease-in;
 
    @media (max-width: 767px) {
       display: block;
@@ -29,3 +30,17 @@
 .burger-btn_dark::after {
    background-color: #000;
 }
+
+.burger-btn_rotaded {
+   transform: rotate(90deg);
+   transition: transform .3s ease-in;
+}
+
+// .burger-btn_dark.burger-btn_rotaded {
+//    border-top: 2px solid $color-primary-light;
+//    border-bottom: 2px solid $color-primary-light;
+// }
+
+// .header__mobile-menu.open + .burger-btn_dark::after {
+//    background-color: $color-primary-light;
+// }
