@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Audio player</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <main>
+      <audio src="assets/audio/The_Blaze-Juvenile.mp3"></audio>
+      <div class="overlay"></div>
+      <div class="container">
+         <div class="audio-player">
+            <div class="cover-wrapper">
+               <img src="assets/covers/blaze.jpg" alt="cover">
+            </div>
+            <div class="content">
+               <div class="song-info">
+                  <div class="song-title">Juvenile</div>
+                  <div class="song-author">Fred </div>
+               </div>
+               <div class="progress-wrapper">
+                  <input type="range" class="progress">
+                  <div class="times">
+                     <p class="current-time">0:00</p>
+                     <p class="duration-time">1:19</p>
+                  </div>
+               </div>
+
+               <div class="buttons">
+                  <button class="prev-btn">
+                     <svg width="24" height="26" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0C5.55228 0 6 0.447716 6 1V14.2679L28.5 1.27757C29.1667 0.89267 30 1.37379 30 2.14359V29.8564C30 30.6262 29.1667 31.1073 28.5 30.7224L6 17.7321V31C6 31.5523 5.55228 32 5 32H1C0.447723 32 0 31.5523 0 31V1C0 0.447716 0.447723 0 1 0H5Z" fill="white"/>
+                     </svg>
+                  </button>
+                  <button class="play-btn">
+                     <svg width="50" height="50" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M33 66C51.2254 66 66 51.2254 66 33C66 14.7746 51.2254 0 33 0C14.7746 0 0 14.7746 0 33C0 51.2254 14.7746 66 33 66ZM23.5 49.4545L52 33L23.5 16.5455V49.4545Z" fill="white"/>
+                        </svg>
+                  </button>
+                  <button class="next-btn">
+                     <svg width="24" height="26" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25 0C24.4477 0 24 0.447716 24 1V14.2679L1.5 1.27757C0.833328 0.89267 0 1.37379 0 2.14359V29.8564C0 30.6262 0.833328 31.1073 1.5 30.7224L24 17.7321V31C24 31.5523 24.4477 32 25 32H29C29.5523 32 30 31.5523 30 31V1C30 0.447716 29.5523 0 29 0H25Z" fill="white"/>
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   
+
+   <footer></footer>
+   <script src="index.js"></script>
+</body>
+</html>
