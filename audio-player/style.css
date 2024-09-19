@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Roboto normal";
+  src: url("assets/fonts/Roboto.woff") format("woff"),
+  url("assets/fonts/Roboto.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto light";
+  src: url("assets/fonts/Robotolight.woff") format("woff"),
+  url("assets/fonts/Robotolight.woff2") format("woff2");
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Roboto light", sans-serif;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: url('assets/covers/radiohead.jpg');
+  /* background-image: url('assets/covers/radiohead.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(17px) brightness(55%);;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.audio-player {
+  display: flex;
+  width: 100%;
+  outline: 1px solid white;
+  border-radius: 10px;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.cover-wrapper {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.cover-wrapper img {
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 20px;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.song-title {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.12rem;
+}
+
+.song-author {
+  font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  min-height: 35px;
+}
+
+.progress-wrapper {
+  margin-top: 10px;
+}
+
+.progress {
+  cursor: pointer;
+  width: 200px;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+}
+
+.controls {
+  display: flex;
+  gap: 17px;
+  padding-top: 20px;
+  align-items: center;
+}
+
+
+.volume {
+  padding-right: 10px;
+  transition: transform .3s;
+}
+
+.play-btn {
+  transition: transform .3s;
+}
+
+.play-btn:hover,
+.volume:hover {
+  transform: scale(1.1);
+}
+
+.like {
+  padding-left: 10px;
+}
+
+.like svg {
+  stroke: #fff;
+  stroke-width: 35;
+  fill: transparent;
+  transition: fill 0.3s;
+}
+
+.like:hover svg  {
+  fill: white; 
+}
+
+.bottom-controls {
+  display: flex;
+  gap: 40px;
+}
+
+.shuffle img,
+.repeat img {
+  opacity: 50%;
+  transition: opacity 0.3s;
+}
+
+.shuffle:hover img,
+.repeat:hover img{
+  opacity: 100%;
+}
