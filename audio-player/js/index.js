@@ -1,7 +1,5 @@
 import { trackList } from './trackList.js';
 
-console.log(trackList);
-
 const audio = document.querySelector('audio');
 const playPauseBtn = document.querySelector('.play-btn');
 const nextBtn = document.querySelector('.next-btn');
@@ -68,7 +66,6 @@ function playNextSong() {
   }
   init(trackList[currentId]);
   playPauseSong();
-  console.log(trackList);
 }
 
 function playPrevSong() {
@@ -85,6 +82,22 @@ function updateProgress() {
   currentTimeWrap.innerHTML = `${currentTime}`;
   progress.value = audio.currentTime;
 }
+
+
+const like = document.querySelector('.like');
+like.addEventListener('click', likeSong);
+
+function likeSong() {
+  if (!trackList[currentId].isLiked) {
+    document.querySelector('.like-svg').classList.add('liked');
+    trackList[currentId].isLiked = true;
+    console.log(trackList[currentId].isLiked);
+  } else {
+    document.querySelector('.like-svg').classList.remove('liked');
+    trackList[currentId].isLiked = false;
+  }
+}
+
 
 progress.addEventListener('change', () => {
   audio.currentTime = progress.value;

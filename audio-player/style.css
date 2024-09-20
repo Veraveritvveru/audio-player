@@ -42,7 +42,6 @@ main {
   left: 0;
   top: 0;
   background-image: url('assets/covers/radiohead.jpg');
-  /* background-image: url('assets/covers/radiohead.jpg'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -157,14 +156,15 @@ button {
   padding-left: 10px;
 }
 
-.like svg {
+.like-svg {
   stroke: #fff;
   stroke-width: 35;
   fill: transparent;
   transition: fill 0.3s;
 }
 
-.like:hover svg  {
+.like-svg:hover,
+.liked  {
   fill: white; 
 }
 
