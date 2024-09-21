@@ -173,13 +173,14 @@ button {
   gap: 40px;
 }
 
-.shuffle img,
-.repeat img {
+.shuffle-icon,
+.repeat-icon {
   opacity: 50%;
   transition: opacity 0.3s;
 }
 
-.shuffle:hover img,
-.repeat:hover img{
+.shuffle:hover .shuffle-icon,
+.repeat:hover .repeat-icon,
+.active {
   opacity: 100%;
 }
