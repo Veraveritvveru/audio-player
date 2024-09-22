@@ -88,8 +88,8 @@ function updateProgress() {
   progress.value = audio.currentTime;
 }
 
-progress.addEventListener('change', () => {
-  audio.currentTime = progress.value;
+progress.addEventListener('input', () => {
+  audio.currentTime = progress.value ;
 })
 
 const like = document.querySelector('.like');
@@ -99,7 +99,6 @@ function likeSong() {
   if (!trackList[currentId].isLiked) {
     document.querySelector('.like-svg').classList.add('liked');
     trackList[currentId].isLiked = true;
-    console.log(trackList[currentId].isLiked);
   } else {
     document.querySelector('.like-svg').classList.remove('liked');
     trackList[currentId].isLiked = false;
@@ -115,7 +114,6 @@ volume.addEventListener('click', () => {
     audio.muted = true;
     volume.innerHTML = '<svg width="25" height="25" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 20.0322L7 16.0806V5.91933L14 1.96772V20.0322ZM5 13.7097C5 14.2091 4.552 14.6129 4 14.6129H3C2.448 14.6129 2 14.2091 2 13.7097V8.2903C2 7.79172 2.448 7.38707 3 7.38707H4C4.552 7.38707 5 7.79172 5 8.2903V13.7097ZM14 0.161263L5 5.58062H2C0.896 5.58062 0 6.38991 0 7.38707V14.6129C0 15.61 0.896 16.4193 2 16.4193H5L14 21.8387C15.104 21.8387 16 21.0294 16 20.0322V1.96772C16 0.970554 15.104 0.161263 14 0.161263ZM23.7929 11.2525L27 14.4596L25.5858 15.8738L22.3787 12.6667L19.1716 15.8738L17.7574 14.4596L20.9645 11.2525L17.8836 8.17157L19.2978 6.75736L22.3787 9.83825L25.4596 6.75736L26.8738 8.17157L23.7929 11.2525Z" fill="white"/></svg>'
   }
-  console.log(audio.muted);
 })
 
 function shuffleSongs() {
@@ -153,8 +151,6 @@ function repeatSong() {
   }
 }
 
-document.querySelector('.cover-wrapper').addEventListener('click', playPauseSong);
-
 //listeners
 playPauseBtn.addEventListener('click', playPauseSong);
 nextBtn.addEventListener('click', playNextSong);
@@ -163,3 +159,4 @@ audio.addEventListener('timeupdate', updateProgress);
 audio.addEventListener('ended', playNextSong);
 document.querySelector('.shuffle').addEventListener('click', shuffleSongs);
 document.querySelector('.repeat').addEventListener('click', repeatSong);
+document.querySelector('.cover-wrapper').addEventListener('click', playPauseSong);
