@@ -31,7 +31,7 @@ export const trackList = [
     title: 'Glimpse of Us',
     author: 'Joji',
     src: 'assets/audio/GlimpseOfUs.mp3',
-    cover: 'assets/covers/Joji.jpg',
+    cover: 'assets/covers/joji.jpg',
     isLiked: false,
   },
 ];
