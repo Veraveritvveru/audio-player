@@ -245,3 +245,21 @@ footer {
   width: 40px;
   height: 40px;
 }
+
+@media screen and (max-width: 760px) {
+  .audio-player {
+    flex-direction: column;
+    padding-right: 0;
+    gap: 15px;
+  }
+  .cover-wrapper img {
+    border-radius: 10px 10px 0 0;
+  }
+  .content {
+    gap: 0;
+    padding: 0 0 10px 0;
+  }
+  .timeline {
+    padding-top: 5px;
+  }
+}
