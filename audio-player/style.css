@@ -49,7 +49,7 @@ main {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: url('assets/covers/radiohead.jpg');
+  background-image: url('assets/covers/blaze.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -76,6 +76,7 @@ main {
 }
 
 .cover-wrapper {
+  cursor: pointer;
   width: 300px;
   height: 300px;
   border-radius: 10px;
@@ -84,6 +85,11 @@ main {
 .cover-wrapper img {
   width: 100%;
   border-radius: 10px 0 0 10px;
+  transition: transform .3s ease-out;
+}
+
+.cover-wrapper:hover img {
+  transform: scale(1.05);
 }
 
 .content {
@@ -118,19 +124,34 @@ main {
   min-height: 35px;
 }
 
-.progress-wrapper {
-  margin-top: 10px;
-}
-
 .progress {
   cursor: pointer;
-  width: 200px;
+  appearance: none;
+  width: 220px;
+  height: 1rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
 }
 
 .timeline {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 175px;
 }
 
 button {
@@ -145,7 +166,6 @@ button {
   padding-top: 20px;
   align-items: center;
 }
-
 
 .volume {
   padding-right: 10px;
@@ -180,6 +200,7 @@ button {
 .bottom-controls {
   display: flex;
   gap: 40px;
+  padding-top: 8px;
 }
 
 .shuffle-icon,
@@ -193,7 +214,6 @@ button {
 .active {
   opacity: 100%;
 }
-
 
 footer {
   width: 100%;

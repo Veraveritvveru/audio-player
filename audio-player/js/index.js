@@ -71,7 +71,6 @@ function playNextSong() {
   }
   init(trackList[currentId]);
   playPauseSong();
-  console.log(trackList);
 }
 
 function playPrevSong() {
@@ -92,7 +91,6 @@ function updateProgress() {
 progress.addEventListener('change', () => {
   audio.currentTime = progress.value;
 })
-
 
 const like = document.querySelector('.like');
 like.addEventListener('click', likeSong);

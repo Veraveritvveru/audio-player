@@ -5,6 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Audio player</title>
    <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="assets/icons/favicon.svg" type="image/x-icon">
 </head>
 <body>
 
@@ -21,12 +22,12 @@
                   <div class="song-title">Juvenile</div>
                   <div class="song-author">The Blaze </div>
                </div>
-               <div class="progress-wrapper">
-                  <input type="range" class="progress">
-                  <div class="timeline">
-                     <p class="current-time">0:00</p>
-                     <p class="duration-time">1:19</p>
-                  </div>
+               <div class="progress-bar">
+                  <input type="range" class="progress styled-slider slider-progress" value="0">
+               </div>
+               <div class="timeline">
+                  <p class="current-time">0:00</p>
+                  <p class="duration-time">03:23</p>
                </div>
 
                <div class="controls">
@@ -77,7 +78,7 @@
          </a>
       </div>
    </footer>
-   
+
    <script src="js/index.js" type="module"></script>
 </body>
 </html>
