@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Audio player</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="assets/icons/favicon.svg" type="image/x-icon">
+</head>
+<body>
+
+   <main>
+      <audio src="assets/audio/Juvenile.mp3"></audio>
+      <div class="overlay"></div>
+      <div class="container">
+         <div class="audio-player">
+            <div class="cover-wrapper">
+               <img class="cover-img" src="assets/covers/blaze.jpg" alt="cover">
+            </div>
+            <div class="content">
+               <div class="song-info">
+                  <div class="song-title">Juvenile</div>
+                  <div class="song-author">The Blaze </div>
+               </div>
+               <div class="progress-bar">
+                  <input type="range" class="progress styled-slider slider-progress" value="0">
+               </div>
+               <div class="timeline">
+                  <p class="current-time">0:00</p>
+                  <p class="duration-time">03:23</p>
+               </div>
+
+               <div class="controls">
+                  <button class="volume">
+                     <img src="assets/icons/volume.svg" width="25" height="25">
+                  </button>
+                  <button class="prev-btn">
+                     <svg width="24" height="26" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0C5.55228 0 6 0.447716 6 1V14.2679L28.5 1.27757C29.1667 0.89267 30 1.37379 30 2.14359V29.8564C30 30.6262 29.1667 31.1073 28.5 30.7224L6 17.7321V31C6 31.5523 5.55228 32 5 32H1C0.447723 32 0 31.5523 0 31V1C0 0.447716 0.447723 0 1 0H5Z" fill="white"/>
+                     </svg>
+                  </button>
+                  <button class="play-btn">
+                     <svg width="50" height="50" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M33 66C51.2254 66 66 51.2254 66 33C66 14.7746 51.2254 0 33 0C14.7746 0 0 14.7746 0 33C0 51.2254 14.7746 66 33 66ZM23.5 49.4545L52 33L23.5 16.5455V49.4545Z" fill="white"/>
+                        </svg>
+                  </button>
+                  <button class="next-btn">
+                     <svg width="24" height="26" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25 0C24.4477 0 24 0.447716 24 1V14.2679L1.5 1.27757C0.833328 0.89267 0 1.37379 0 2.14359V29.8564C0 30.6262 0.833328 31.1073 1.5 30.7224L24 17.7321V31C24 31.5523 24.4477 32 25 32H29C29.5523 32 30 31.5523 30 31V1C30 0.447716 29.5523 0 29 0H25Z" fill="white"/>
+                     </svg>
+                  </button>
+                  <button class="like">
+                     <svg class="like-svg" fill="#ffffff" height="25px" width="25px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-30.72 -30.72 573.44 573.44" enable-background="new 0 0 512 512" xml:space="preserve" stroke="#ffffff" stroke-width="0.00512" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="8.192"></g><g id="SVGRepo_iconCarrier"> <path d="M384,28.3c-64,0-96.2,27.6-128,64c-31.8-36.4-64-64-128-64S0,71,0,199c0,64,64,192,256,298.7C448,391,512,263,512,199 C512,71,448,28.3,384,28.3z"></path> </g></svg>
+                  </button>
+               </div>
+               <div class="bottom-controls">
+                  <button class="shuffle">
+                     <img class="shuffle-icon" src="assets/icons/shuffle.svg" alt="shuffle">
+                  </button>
+                  <button class="repeat">
+                     <img  class="repeat-icon" src="assets/icons/repeat.svg" alt="repeat">
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   
+
+   <footer>
+      <div class="footer-wrapper">
+         <div class="left-block">
+            <p class="year">2024</p>
+            <a href="https://github.com/Veraveritvveru" class="gh-link" target="_blank">GitHub</a>
+         </div>
+         <a href="https://rs.school/courses/javascript-preschool-ru" class="rs-logo" target="_blank">
+            <img src="assets/icons/rss-logo.svg" alt="RS School logo">
+         </a>
+      </div>
+   </footer>
+
+   <script src="js/index.js" type="module"></script>
+</body>
+</html>
