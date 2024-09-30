@@ -1,31 +1,29 @@
-const url = 'https://api.unsplash.com/search/photos?query=spring&per_page=30&orientation=landscape&client_id=w5qDyHiYQqv5A4Kj3GHcWmYh-pIEfbA7y1gAZ7NBqrk';
+const accessKey = 'w5qDyHiYQqv5A4Kj3GHcWmYh-pIEfbA7y1gAZ7NBqrk';
+const galleryContainer = document.querySelector('.gallery-container');
+const searchInput = document.querySelector('.search-input');
+const searchBtn = document.querySelector('.search-btn');
 
-async function getData() {
+let query = 'mountains';
+
+async function getData(query) {
+  const url = `https://api.unsplash.com/search/photos?query=${query}&per_page=30&orientation=landscape&client_id=${accessKey}`;
+
   try {
     const res = await fetch(url);
     const data = await res.json();
-    console.log(data.results);
+    const urls = [];
+
+    if(!data.results.length) {
+      galleryContainer.innerHTML = '<p class="error">Ничего не нашлось. Попробуйте другой запрос</p>'
+    } else {
+      data.results.forEach(picture => {
+        urls.push(picture.urls.regular)
+      })
+      showImages(urls);
+    }
   } catch(e) {
-    // console.log(e);
-  alert('попробуйте по другому');
+    galleryContainer.innerHTML = '<p class="error">Слишком много запросов. Попробуйте позже</p>'
   }
 }
 
-getData();
-
-function createHtmlElem(tag, className, parent) {
-  const element = document.createElement(tag);
-  element.classList.add(className);
-  parent.append(element);
-}
-
-const imageContainer = document.querySelector('.image-container');
-
-for (let i = 0; i <= 30; i++) {
-  createHtmlElem('div', 'gallery-item', imageContainer);
-}
-
-// function createImages() {
-//   const container = document.createElement('div');
-//   container
-// }
+getData(query);
