@@ -27,3 +27,14 @@ async function getData(query) {
 }
 
 getData(query);
+
+
+function showImages(urls) {
+  galleryContainer.innerHTML = '';
+  urls.map(url => {
+    const img = document.createElement('div');
+    img.classList.add('image-container');
+    galleryContainer.append(img);
+    img.style.backgroundImage = `url(${url})`;
+  })
+}
