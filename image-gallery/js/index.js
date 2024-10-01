@@ -38,3 +38,15 @@ function showImages(urls) {
     img.style.backgroundImage = `url(${url})`;
   })
 }
+
+
+searchBtn.addEventListener('click', () => {
+  console.log(searchInput.value);
+  query= searchInput.value;
+  getData(query);
+})
+
+searchInput.addEventListener('change', () => {
+  query= searchInput.value;
+  getData(query);
+})
