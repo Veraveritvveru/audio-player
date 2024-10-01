@@ -56,15 +56,15 @@ h1 {
 }
 
 .main-wrapper {
-  margin-top: 8rem;
+  margin-top: 9rem;
 }
 
-form {
+.search-box  {
   position: relative;
   width: 280px;
 }
 
-.input-search {
+.search-input {
   width: 100%;
   height: 3.5rem;
   padding-left: 3.7rem;
@@ -77,7 +77,7 @@ form {
   border: 2px solid #525353;
 }
 
-.input-search::-webkit-search-cancel-button {
+.search-input::-webkit-search-cancel-button {
   appearance: none;
   background-image: url('img/cancel.svg');
   width: 20px;
@@ -85,7 +85,7 @@ form {
   background-size: contain;
 }
 
-.search-icon {
+.search-btn {
   position: absolute;
   top: 5px;
   left: 10px;
@@ -98,7 +98,7 @@ form {
   height: 2.5rem;
 }
 
-.search-icon span{
+.search-btn span{
   font-size: 2.2rem;
 }
 
@@ -115,7 +115,8 @@ form {
   cursor: pointer;
   width: 360px;
   height: 214px;
-  background-color: aquamarine;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 footer {
@@ -127,17 +128,15 @@ footer {
   justify-content: space-between;
   align-items: center;
   max-width: 1280px;
-  height: 45px;
-  padding: 0 20px 15px 20px;
-  margin: 0 auto;
+  padding: 0 25px 0 25px;
+  margin: 0.8rem auto 0 auto;
 }
 
 .left-block {
   display: flex;
   gap: 20px;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  padding-top: 10px;
 }
 
 .rs-logo {
@@ -145,6 +144,11 @@ footer {
 }
 
 .rs-logo img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+}
+
+.error {
+  font-size: 1.8rem;
+  margin-top: 30vh;
 }
